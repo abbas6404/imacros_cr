@@ -473,6 +473,7 @@ function ensureDirectoryExists(node) {
 
 function installSampleMacroFiles() {
     var names = [
+        "AiOSMM.iim",
         "ArchivePage.iim",
         "Eval.iim",
         "Extract.iim",
@@ -536,6 +537,7 @@ function installAddressCsv() {
 
 function installSampleBookmarkletMacros() {
     var names = [
+        "AiOSMM.iim",
         "ArchivePage.iim",
         "Eval.iim",
         "Extract.iim",
@@ -839,11 +841,11 @@ function showInfo(args) {
 
 function getLimits() {
     let defaultLimits = {
-        maxVariables: 4,
-        maxCSVRows: 100,
-        maxCSVCols: 3,
-        maxMacroLen: 50000,
-        maxIterations: 100
+        maxVariables: 99,
+        maxCSVRows: 99,
+        maxCSVCols: 99,
+        maxMacroLen: 99999,
+        maxIterations: 99999
     }
 
     return afio.isInstalled().then(
