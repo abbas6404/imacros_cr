@@ -1,0 +1,79 @@
+VERSION BUILD=1011 RECORDER=CR
+SET !TIMEOUT_PAGE 20
+SET !ERRORIGNORE YES
+
+' Store URLs in variables - up to 9 links
+SET !VAR1 https://www.facebook.com/share/1AYm6qvcSf/?mibextid=wwXIfr
+SET !VAR2 https://www.facebook.com/profile.php?id=61575060612661
+SET !VAR3 https://www.facebook.com/FirstHomeFin
+SET !VAR4 https://www.facebook.com/share/19GyN4nj5D/
+SET !VAR5 https://www.facebook.com/profile.php?id=61576540130819
+SET !VAR6 https://www.facebook.com/share/1L6kvBTFJH
+SET !VAR7 https://www.facebook.com/greenbdshops?mibextid=ZbWKwL
+SET !VAR8 https://www.facebook.com/profile.php?id=61576814634094
+
+' Set how many URLs to process (1-9)
+SET !VAR10 9
+
+' Switch to the tab based on the current loop number
+TAB T={{!LOOP}}
+WAIT SECONDS=1
+
+' Process URL 1
+URL GOTO={{!VAR1}}
+TAG POS=1 TYPE=DIV ATTR=TXT:󱘆Like
+TAG POS=1 TYPE=DIV ATTR=TXT:󱙶Follow
+TAG POS=2 TYPE=DIV ATTR=TXT:Join<SP>group
+WAIT SECONDS=2
+
+
+
+' Process URL 2
+URL GOTO={{!VAR2}}
+TAG POS=1 TYPE=DIV ATTR=TXT:󱘆Like
+TAG POS=1 TYPE=DIV ATTR=TXT:󱙶Follow
+TAG POS=2 TYPE=DIV ATTR=TXT:Join<SP>group
+WAIT SECONDS=2
+
+' Process URL 3
+URL GOTO={{!VAR3}}
+TAG POS=1 TYPE=DIV ATTR=TXT:󱘆Like
+TAG POS=1 TYPE=DIV ATTR=TXT:󱙶Follow
+TAG POS=2 TYPE=DIV ATTR=TXT:Join<SP>group
+WAIT SECONDS=2
+
+' Process URL 4
+URL GOTO={{!VAR4}}
+TAG POS=1 TYPE=DIV ATTR=TXT:󱘆Like
+TAG POS=1 TYPE=DIV ATTR=TXT:󱙶Follow
+TAG POS=2 TYPE=DIV ATTR=TXT:Join<SP>group
+WAIT SECONDS=2
+
+' Process URL 5
+URL GOTO={{!VAR5}}
+TAG POS=1 TYPE=DIV ATTR=TXT:󱘆Like
+TAG POS=1 TYPE=DIV ATTR=TXT:󱙶Follow
+TAG POS=2 TYPE=DIV ATTR=TXT:Join<SP>group
+WAIT SECONDS=2
+
+' Process URL 6
+URL GOTO={{!VAR6}}
+TAG POS=1 TYPE=DIV ATTR=TXT:󱘆Like
+TAG POS=1 TYPE=DIV ATTR=TXT:󱙶Follow
+TAG POS=2 TYPE=DIV ATTR=TXT:Join<SP>group
+WAIT SECONDS=2
+
+' Process URL 7
+URL GOTO={{!VAR7}}
+TAG POS=1 TYPE=DIV ATTR=TXT:󱘆Like
+TAG POS=1 TYPE=DIV ATTR=TXT:󱙶Follow
+TAG POS=2 TYPE=DIV ATTR=TXT:Join<SP>group
+WAIT SECONDS=2
+
+' Process URL 8
+URL GOTO={{!VAR8}}
+TAG POS=1 TYPE=DIV ATTR=TXT:󱘆Like
+TAG POS=1 TYPE=DIV ATTR=TXT:󱙶Follow
+TAG POS=2 TYPE=DIV ATTR=TXT:Join<SP>group
+WAIT SECONDS=2
+
